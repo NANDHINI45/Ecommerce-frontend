@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Ecommerce Responsive full website</title>
+        <!--css-link-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Jost:wght@100;200;300;400;500;
+600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.
+0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/
+E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" 
+referrerpolicy="no-referrer" />
+
+<link rel="stylesheet"
+ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><img src="data:image/png;base64,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" alt=""></a>
+
+            <ul class="navmenu">
+                <li><a href="no stack">home</a></li>
+                <li><a href="no stack">shop</a></li>
+                <li><a href="no stack">products</a></li>
+                <li><a href="no stack">page</a></li>
+                <li><a href="no stack">Docs</a></li>
+            </ul>
+            <div class="nav-icon">
+                <a href="no stack"><i class='bx bx-search'></i></a>
+                <a href="no stack"><i class='bx bx-user'></i></a>
+                <a href="no stack"><i class='bx bx-cart'></i></a>
+
+                <div class="bx bx-menu" id="menu-icons"></div>
+            </div>
+        </header>
+
+        <section class="main-home">
+        </section>
+            <div class="main-text">
+                <h5>Winter Collection</h5>
+                <h1>New Winter <br> Collection 2023</h1>
+                <p>There's Nothing like Trend</p>
+            </div>
+            <div>
+            <a href="no stack" class="main-btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="down-arrow">
+                <a href="#trending" class="down"><i class='bx bx-down-arrow-alt'></i></a>
+
+            </div>
+       
+       <!-- trending-products-->
+       <section class="trending-products" id="trending">
+         <div class="center-text">
+            <h2>Our Trending<span>products</span></h2>
+         </div>
+         
+         <div class="products">
+            <div class="row">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20211013/DMdl/61667cc8f997ddf8f1ce86dd/-473Wx593H-463086147-blue-MODEL.jpg" alt="">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                    
+                    
+                </div>
+                <div class="ratting">
+                    <i class='bx bx-star'></i> 
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+
+                <div class="price">
+                    <h4>Half Running Set</h4>
+                    <p>Rs.2500</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2021/3/OB/HU/QM/85011401/ms-f3cc2-512-20948521-1b76eed9-l-jpg-500x500.jpg" alt="">
+                <div class="product-text">
+                    <h5>New</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bx-star'></i> 
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+
+                <div class="price">
+                    <h4>Formal Men Lowers</h4>
+                    <p>Rs.7500</p>
+                </div>
+                </div>
+                <div class="row">
+                    <img src="https://cdn.shopify.com/s/files/1/0139/3429/7142/products/BK018_1.jpg?v=1650876677" alt="">
+                    
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bx-star'></i> 
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Half Running Suit</h4>
+                        <p>Rs.3000</p>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <img src="https://static01.manyavar.com/uploads/homepagetemplates/images/gown-final-women-2022.jpg" alt="">
+                        <div class="product-text">
+                            <h5>Hot</h5>
+                        </div>
+                        <div class="heart-icon">
+                            <i class='bx bx-heart'></i>
+                        </div>
+                        <div class="ratting">
+                            <i class='bx bx-star'></i> 
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+        
+                        <div class="price">
+                            <h4>Half Fancy Lady Dresses</h4>
+                            <p>Rs.1000</p>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzDFIrhcFtIbKrfTi6f5UZCiAI9B3PyssrUg&usqp=CAU" alt="">
+                            
+                            <div class="heart-icon">
+                                <i class='bx bx-heart'></i>
+                            </div>
+                            <div class="ratting">
+                                <i class='bx bx-star'></i> 
+                                <i class='bx bx-star'></i>
+                                <i class='bx bx-star'></i>
+                                <i class='bx bx-star'></i>
+                                <i class='bx bxs-star-half' ></i>
+                            </div>
+            
+                            <div class="price">
+                                <h4>Flix Flox Jeans</h4>
+                                <p>Rs.9000</p>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7wSEkFCjSJUHcxbqxi0HqWpbasxXUW8uD1g&usqp=CAU" alt="">
+                                <div class="product-text">
+                                    <h5>Hot</h5>
+                                </div>
+                                <div class="heart-icon">
+                                    <i class='bx bx-heart'></i>
+                                </div>
+                                <div class="ratting">
+                                    <i class='bx bx-star'></i> 
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bxs-star-half' ></i>
+                                </div>
+                
+                                <div class="price">
+                                    <h4>Fancy Salwar Suits</h4>
+                                    <p>Rs.4050</p>
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <img src="https://i.pinimg.com/564x/8c/e5/c7/8ce5c7795b446a4398662dc9c35954c2.jpg" alt="">
+                                    <div class="product-text">
+                                        <h5>Sale</h5>
+                                    </div>
+                                    <div class="heart-icon">
+                                        <i class='bx bx-heart'></i>
+                                    </div>
+                                    <div class="ratting">
+                                        <i class='bx bx-star'></i> 
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bxs-star-half' ></i>
+                                    </div>
+                    
+                                    <div class="price">
+                                        <h4>Printed Straight Kurta</h4>
+                                        <p>Rs.4600</p>
+                                    </div>
+                                </div>
+                                    <div class="row">
+                                        <img src="https://img3.junaroad.com/uiproducts/18418941/zoom_0-1674657683.jpg" alt="">
+                                        <div class="product-text">
+                                            <h5>Sale</h5>
+                                        </div>
+                                        <div class="heart-icon">
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div class="ratting">
+                                            <i class='bx bx-star'></i> 
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bxs-star-half' ></i>
+                                        </div>
+                        
+                                        <div class="price">
+                                            <h4>Collot Full Dress</h4>
+                                            <p>Rs.3090</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <img src="https://static.wixstatic.com/media/8e636c_ad895014ec3e4918a953dd546b713946~mv2.jpg/v1/fill/w_625,h_834,al_c,q_85,usm_0.66_1.00_0.01/8e636c_ad895014ec3e4918a953dd546b713946~mv2.webp">
+                                        <div class="product-text">
+                                            <h5>Sale</h5>
+                                        </div>
+                                        <div class="heart-icon">
+                                            <i class='bx bx-heart'></i>
+                                            
+                                            
+                                        </div>
+                                        <div class="ratting">
+                                            <i class='bx bx-star'></i> 
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bxs-star-half' ></i>
+                                        </div>
+                        
+                                        <div class="price">
+                                            <h4>Half Running Set</h4>
+                                            <p>Rs.7250</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <img src="https://static.wixstatic.com/media/8e636c_29f95385c9424b2bb85e5c8d1e846b21~mv2.jpg/v1/fill/w_625,h_834,al_c,q_85,usm_0.66_1.00_0.01/8e636c_29f95385c9424b2bb85e5c8d1e846b21~mv2.webp">
+                                        <div class="product-text">
+                                            <h5>Sale</h5>
+                                        </div>
+                                        <div class="heart-icon">
+                                            <i class='bx bx-heart'></i>
+                                            
+                                            
+                                        </div>
+                                        <div class="ratting">
+                                            <i class='bx bx-star'></i> 
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bxs-star-half' ></i>
+                                        </div>
+                        
+                                        <div class="price">
+                                            <h4>Half Running Set</h4>
+                                            <p>Rs.3400</p>
+                                        </div>
+                                    </div>
+         </div>
+       </section>
+        
+        
+       <!--Client-Review-Section-->
+
+       <section class="client-reviews">
+        <div class="reviews">
+            <h3>Client Reviews</h3>
+           <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww&w=1000&q=80">
+           <h2><i>CATALINA</i></h2>
+            
+            <p>"I recently made a purchase on this website, and I must say I had a fantastic experience. The website's interface was user-friendly, making it easy for me to find the products I was looking for. They had a wide variety of options, and I was impressed with the availability of the items I wanted to purchase.
+
+                The pricing was reasonable, and I even managed to snag a great discount during their sale. It was a pleasant surprise and made the shopping experience even better. The checkout process was smooth, and I appreciated the multiple payment options available.What really stood out to me was their exceptional customer support. I had a query about my order, so I reached out through their live chat feature. The representative was prompt, knowledgeable, and resolved my issue quickly.
+                When it comes to shipping and delivery, this website exceeded my expectations. They provided regular updates on the status of my order, and it arrived right on schedule. The packaging was secure, and the products were in perfect condition.</p>
+
+        
+            
+        </div>
+       </section>
+    </body>
+</html>
